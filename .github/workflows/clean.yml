@@ -1,7 +1,7 @@
 name: clean
 on:
-  schedule:
-    - cron:  "01 * * * *"
+  #schedule:
+    #- cron:  "01 * * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
