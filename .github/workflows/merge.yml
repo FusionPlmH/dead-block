@@ -4,9 +4,12 @@ name: merge
 on:
   schedule:
     - cron:  "59 * * * *"
+  watch:
+     types: started
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
     steps:
     - uses: actions/checkout@v2
     - name: Ready to Go
@@ -55,14 +58,14 @@ jobs:
         sort -u tmpblock > deadblock
         rm tmpblock
 
-    - name: push
-      uses: github-actions-x/commit@v2.7
+    - name: Git Auto Commit
+      uses: stefanzweifel/git-auto-commit-action@v4.4.1
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'master'
-        commit-message: 'Add Deadhost'
-        force-add: 'true'
-        files: deadblock
-        name: FusionPlmH
-        email: leemenhin@gmail.com
-        rebase: 'true'
+           commit_message: Auto Update
+           branch: master
+           commit_options: '--no-verify --signoff'
+           file_pattern: deadblock
+           repository: .
+           commit_user_name: FusionPlmH
+           commit_user_email: leemenhin@gmail.com
+           skip_dirty_check: true
