@@ -1,0 +1,21 @@
+name: clean
+on:
+  schedule:
+    - cron:  "01 * * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Ready to Go
+      run: |
+        rm splitblock*
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+           commit_message: Auto Update
+           branch: master
+           commit_options: '--no-verify --signoff'
+           repository: .
+           commit_user_name: FusionPlmH
+           commit_user_email: leemenhin@gmail.com
+           push_options: '--force'

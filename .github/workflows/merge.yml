@@ -1,0 +1,68 @@
+# This is a basic workflow to help you get started with Actions
+
+name: merge
+on:
+  schedule:
+    - cron:  "59 * * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Ready to Go
+      run: |
+        rm deadblock
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock0
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock1
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock2
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock3
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock4
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock5
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock6
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock7
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock8
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock9
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock10
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock11
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock12
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock13
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock14
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock15
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock16
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock17
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock18
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock19
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock20
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock21
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock22
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock23
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock24
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock25
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock26
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock27
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock28
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock29
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock30
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock31
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock32
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock33
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock34
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock35
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock36
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock37
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock38
+        cat deadblock* >> tmpblock
+        sort -u tmpblock > deadblock
+        rm tmpblock
+
+    - name: push
+      uses: github-actions-x/commit@v2.7
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'master'
+        commit-message: 'Add Deadhost'
+        force-add: 'true'
+        files: deadblock
+        name: FusionPlmH
+        email: leemenhin@gmail.com
+        rebase: 'true'
