@@ -24,5 +24,6 @@ jobs:
            repository: .
            commit_user_name: FusionPlmH
            commit_user_email: leemenhin@gmail.com
+           push_options: '--force'
            skip_dirty_check: true
         
