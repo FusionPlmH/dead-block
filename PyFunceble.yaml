@@ -28,11 +28,8 @@ dns_lookup_over_tcp: False
 #
 #       dns_server:
 #         - "8.8.8.8" # First DNS server.
-#         - "8.4.4.8" # Second DNS server.
-dns_server: 
-         - "8.8.8.8"
-         - "208.67.222.222"
-         - "1.1.1.1"
+#         - "8.8.4.4" # Second DNS server.
+dns_server: null
 # Set the element to filter.
 filter: ""
 # Enable / disable the generation of complements.
@@ -54,7 +51,7 @@ inactive_database: False
 # Enable / Disable the output of every information of screen.
 less: True
 # Enable / Disable the test in local network.
-local: True
+local: False
 # Enable / Disable the output of every logs.
 logs: True
 # Set the maximal number of simultaneous processes to run.
@@ -95,6 +92,8 @@ show_percentage: False
 simple: False
 # Enable / disable the split of the results files.
 split: False
+# Enable / disable the storage of the whole WHOIS record.
+store_whois_record: False
 # Enable / disable the syntax checking mode.
 # In this mode we do not check for the availability. It's just syntax check.
 syntax: False
@@ -138,12 +137,6 @@ outputs:
     public_suffix: public-suffix.json
     mining: mining.json
     whois_db: whois_db.json
-
-  db_type:
-    directory: db_types
-    files:
-      mariadb: mariadb.sql
-      mysql: mysql.sql
 
   domains:
     directory: domains
@@ -289,13 +282,11 @@ http_codes:
 links:
   api_date_format: "https://pyfunceble.funilrys.com/api/date-format"
   api_no_referer: "https://pyfunceble.funilrys.com/api/no-referer"
-  config: "https://raw.githubusercontent.com/funilrys/PyFunceble/dev/.PyFunceble_production.yaml"
-  dir_structure: "https://raw.githubusercontent.com/funilrys/PyFunceble/dev/dir_structure_production.json"
+  config: "https://raw.githubusercontent.com/funilrys/PyFunceble/master/.PyFunceble_production.yaml"
+  dir_structure: "https://raw.githubusercontent.com/funilrys/PyFunceble/master/dir_structure_production.json"
   iana: "https://raw.githubusercontent.com/PyFunceble/iana/master/iana-domains-db.json"
   ipv4_reputation: "https://reputation.alienvault.com/reputation.data"
-  mariadb: "https://raw.githubusercontent.com/funilrys/PyFunceble/dev/db_types/mariadb.sql"
-  mysql: "https://raw.githubusercontent.com/funilrys/PyFunceble/dev/db_types/mysql.sql"
   psl: "https://raw.githubusercontent.com/PyFunceble/public-suffix/master/public-suffix.json"
   repo: "https://github.com/funilrys/PyFunceble"
-  requirements: "https://raw.githubusercontent.com/funilrys/PyFunceble/dev/requirements.txt"
+  requirements: "https://raw.githubusercontent.com/funilrys/PyFunceble/master/requirements.txt"
   user_agents: "https://raw.githubusercontent.com/PyFunceble/user_agents/master/user_agents.json"
