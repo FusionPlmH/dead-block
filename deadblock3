@@ -21,7 +21,6 @@ ads.newtention.net
 ads.newtimes.com
 ads.ngenuity.com
 ads.nikkeibp.co.jp
-ads.novanet.vn
 ads.nowrunning.com
 ads.npr.valueclick.net
 ads.ntadvice.com
@@ -37,7 +36,6 @@ ads.orsm.net
 ads.osdn.com
 ads.oyungemisi.com
 ads.pandora.tv.net
-ads.panoramtech.net
 ads.papeteka.com
 ads.partner2profit.com
 ads.pastemagazine.com
@@ -50,10 +48,12 @@ ads.pg.valueclick.net
 ads.pheedo.com
 ads.phillyburbs.com
 ads.pilotonline.com
+ads.pittsburghlive.com
 ads.place1.com
 ads.planet-f1.com
 ads.plantyours.com
 ads.pno.net
+ads.popfolkstars.com
 ads.portlandmercury.com
 ads.postimees.ee
 ads.premiumnetwork.com
@@ -83,13 +83,13 @@ ads.sagabg.net
 ads.savannahnow.com
 ads.scabee.com
 ads.schwabtrader.com
+ads.scifi.com
 ads.seattletimes.com
 ads.seriouswheels.com
 ads.shoppingads.com
 ads.shoutfile.com
 ads.shovtvnet.com
 ads.sify.com
-ads.singlescash.com
 ads.sitemeter.com
 ads.sixapart.com
 ads.skinected.com
@@ -179,7 +179,6 @@ ads.xboxic.com
 ads.xposed.com
 ads.xtramsn.co.nz
 ads.xxxbunker.com
-ads.y-0.net
 ads.yieldmedia.net
 ads.youporn.com
 ads.zap2it.com
@@ -275,6 +274,7 @@ ads4.ad-flow.com
 ads4.advance.net
 ads4.advertwizard.com
 ads4.canoe.ca
+ads4.kompasads.com
 ads4.mojiva.com
 ads4.udc.advance.net
 ads4.virtumundo.com
@@ -354,7 +354,6 @@ adserver.adremedy.com
 adserver.adserver.com.pl
 adserver.adsimsar.net
 adserver.adsincontext.com
-adserver.advertist.com
 adserver.affiliatemg.com
 adserver.affiliation.com
 adserver.aim4media.com
@@ -369,7 +368,6 @@ adserver.arttoday.com
 adserver.atari.net
 adserver.billiger-surfen.de
 adserver.billiger-telefonieren.de
-adserver.bizland-inc.net
 adserver.bluereactor.net
 adserver.bluewin.ch
 adserver.buttonware.com
@@ -400,7 +398,6 @@ adserver.gamesquad.net
 adserver.garden.com
 adserver.gecce.com
 adserver.gunaxin.com
-adserver.hardwareanalysis.com
 adserver.harvestadsdepot.com
 adserver.hi-m.de
 adserver.hispavista.com
@@ -428,6 +425,7 @@ adserver.newdigitalgroup.com
 adserver.newmassmedia.net
 adserver.news-journalonline.com
 adserver.newtimes.com
+adserver.pampa.com.br
 adserver.phillyburbs.com
 adserver.plhb.com
 adserver.pollstar.com
@@ -448,8 +446,10 @@ adserver.thema.cc
 adserver.thisislondon.co.uk
 adserver.tilted.net
 adserver.tqs.ca
+adserver.track-star.com
 adserver.trb.com
 adserver.tribuneinteractive.com
+adserver.trojaner-info.de
 adserver.tsgadv.com
 adserver.tulsaworld.com
 adserver.tutkusunucu.com
@@ -516,12 +516,10 @@ adsr3pg.com.br
 adsrc.bankrate.com
 adsremote.scripps.com
 adsremote.scrippsnetwork.com
-adsrv.adplus.co.id
 adsrv.bankrate.com
 adsrv.eacdn.com
 adsrv.emporis.com
 adsrv.heraldtribune.com
-adsrv.kobi.tv
 adsrv.lua.pl
 adsrv.news.com.au
 adsrv1.tapad.com
@@ -557,12 +555,14 @@ adv-target.ru
 adv.0tub.com
 adv.440net.com
 adv.adtotal.pl
+adv.adultpartnership.com
 adv.bannercity.ru
 adv.bookclubservices.ca
 adv.elaana.com
 adv.federalpost.ru
 adv.grandonmedia.com
 adv.lavanetwork.net
+adv.mangoadv.com
 adv.netshelter.net
 adv.surinter.net
 adv.zapal.ru
@@ -591,7 +591,6 @@ advert.uzmantv.com
 adverti.io
 advertisers.federatedmedia.net
 advertising.aol.com
-advertising.hiasys.com
 advertising.online-media24.de
 advertising.zenit.org
 advertland.ru
@@ -656,7 +655,6 @@ aeros10.tk
 aeros11.tk
 aeros12.tk
 aestldhxdqlo.com
-aeventlog.beacon.qq.com
 afa9bdfa63bf7.com
 afantispy.com
 afd.baidu.cn
