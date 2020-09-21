@@ -59,7 +59,7 @@ jobs:
         rm tmpblock
 
     - name: Git Auto Commit
-      uses: stefanzweifel/git-auto-commit-action@v4.4.1
+      uses: stefanzweifel/git-auto-commit-action@v4.5.1
       with:
            commit_message: Auto Update
            branch: master
