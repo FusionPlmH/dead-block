@@ -10,7 +10,7 @@ jobs:
     - name: Ready to Go
       run: |
         rm splitblock*
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: stefanzweifel/git-auto-commit-action@v4.5.1
       with:
            commit_message: Auto Update
            branch: master
