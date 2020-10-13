@@ -5,6 +5,8 @@ sdk.rubiconproject.com
 sdk.slave.phone.igexin.com
 sdk.tracksummer.com
 sdk.w.inmobi.com
+sdkconfig.ad.xiaomi.com
+sdkconfig.video.qq.com
 sdkdm.com
 sdksitter.m.sjzhushou.com
 sdktm.vip.dfw1.inmobi.com
@@ -103,7 +105,6 @@ secure.calch.gdn
 secure.img-cdn.mediaplex.com
 secure.img-cdn2.mediaplex.com
 secure.leadback.advertising.com
-secure.merchantadvantage.com
 secure.widget.dynamic.advertising.com
 secureads.ft.com
 securecontactinfo.com
@@ -191,6 +192,7 @@ sermo-d.openx.net
 serolan.com
 serv-load.com
 serv.ad-rotator.com
+serv.tooplay.com
 serv2.ad-rotator.com
 serv2.ad.mobogenie.com
 serv99.vizury.com
@@ -263,10 +265,8 @@ servfjrncdn.org
 servfjrpbndsw.ru
 servgbffdtlfd.ml
 service-pay.company
-service-stat.tbn.ru
 service.adtech.de
 service.mm-r-prop-11-16-2.com
-service.multi-pops.com
 service.rorer.ru
 service.trustclick.ne.jp
 service001.adtech.de
@@ -274,6 +274,7 @@ service002.adtech.de
 service003.adtech.de
 service00x.adtech.de
 service4refresh.info
+servicelayer.king.com
 serviceon.onthe.io
 services-rakutencard.com
 services.adtech.de
@@ -322,6 +323,7 @@ servyhdsitepbnsrv.co
 setrtcjfhreqg.com
 setting.adzcore.com
 setting.crashlytics.com
+setting.snswin.qq.com
 settings-1475741074.mtraction.com
 settings-1476442757.mtraction.com
 settings-1479276883.mtraction.com
@@ -366,7 +368,6 @@ sfloushi.com
 sfmgzvam.com
 sfo.xsgfhkwd.date
 sfp-cdn.sharethrough.com
-sfxl.com.cn
 sfxmdqbi.com
 sg-adserver.vizury.com
 sg-cdn.bidgear.com
@@ -382,6 +383,7 @@ sg.origin.startappservice.com
 sg.us-west-1.p.xpanama.net
 sgbfjs.info
 sgc.urbanairship.com
+sgg.southcn.com
 sgggjaosyrxr.com
 sgiueejx.com
 sgolden.site
@@ -397,12 +399,10 @@ sgzlmagzrrk.com
 sgzs999.com
 sh.cn.criteo.com
 sh.cn.criteo.net
-sh.i2i.jp
 sh4sure-images.adbureau.net
 shabakti.adk2x.com
 shacupwelhehqc.com
 shadow.cloud.fyber.com
-shaft.jebe.renren.com
 shaneco.btttag.com
 shang.baful.net
 shanghaironghua.com
@@ -411,6 +411,7 @@ shangmiss.wap.xsbiquge.com
 shannon.nimiqpool.com
 shanyi.info
 shard85.onthe.io
+share.gzdsw.com
 shareaholics.t.domdex.com
 shareaza.com
 sharebar-fast.addthis.com
@@ -467,6 +468,7 @@ shop-rnib.org
 shop.inteleksys.com
 shop.kauffes.de
 shop.onthe.io
+shop.skin-safety.com
 shopathome-uncategorized1.t.domdex.com
 shopathome.t.domdex.com
 shopbop.sp1.convertro.com
@@ -483,6 +485,7 @@ shops-malls-rewardpath.com
 shopstyle.com.ssl.d1.sc.omtrdc.net
 shoptosaveenergy.com
 shorlakmedia.com
+shouliang.52lvgucci.com
 shouxaum.net
 shouyili.mobi
 shoveac.com
@@ -499,6 +502,7 @@ show-sg17.c.appier.net
 show-sg5.c.appier.net
 show-sg7.c.appier.net
 show-sg8.c.appier.net
+show.9zwang.com
 show.findqc.com
 show.niqiu99.org
 show.qx15.com
@@ -515,7 +519,6 @@ shubertorg-entertainment.t.domdex.com
 shulhanafuh.com
 shushijiameng123.com
 shushun16.com
-shuzhundsj.cn
 shxinjie.cn
 shxqeps.com
 shyanche.net
@@ -626,14 +629,12 @@ simpleco.in
 simpletrck.com
 simplisticnose.com
 sin114.com
-sina-img.club
 sina.igexin.com
 sina.wrating.com
 sinaaliyun.cn
 sincentre.info
 sinceresofa.com
 single-online.petrovka.info
-single.upsight-api.com
 singleice.link
 singleparentmeet.adlegend.com
 siniature.com
@@ -750,14 +751,12 @@ skedina.com
 skencituer.com
 skhflncik.com
 skill.skilljam.com
-skinarena.com
 sklep-agricar.pl
 sklep-play.cc
 sklep1748948.home.pl
 sklepcolumbia.com
 sklepnorthface.com
 sknrtel.com
-skpfalenty.pl
 skubizd.info
 sky-connect.adinfuse.com
 sky.adinfuse.com
@@ -785,7 +784,6 @@ slb.upshengyi.com
 slbus1.clicktale.net
 slbus2.clicktale.net
 slbus3.clicktale.net
-slc.stats.paypal.com
 sldjkl.com
 sleeptrain.adlegend.com
 slejv.space
@@ -801,6 +799,7 @@ slowmac.tech
 slowmacfaster.trade
 slowpoker.ru
 slsrs01.clicktale.net
+sltint.adv.ott.cibntv.net
 slygzsc.cn
 sm.toutiao.com
 sm1.sitemeter.com
@@ -828,8 +827,6 @@ smartlink.propellerads.com
 smartshare.lgtvsdp.com
 smarttds.ru
 smartyads.g2afse.com
-smartyads.rtb.adx1.com
-smartyadsdisplay.rtb.adx1.com
 smbc.bk-securityo.com
 smbc.jp-bankq.com
 smckii.cn
