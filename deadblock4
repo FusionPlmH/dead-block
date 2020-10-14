@@ -95,6 +95,7 @@ ads.mapps.cricbuzz.com
 ads.marvel.com
 ads.matomymobile.com
 ads.mdotm.com
+ads.mediamayhemcorp.com
 ads.meropar.jp
 ads.milliyet.cubecdn.net
 ads.miniclip.com
@@ -135,7 +136,6 @@ ads.newtention.net
 ads.newtimes.com
 ads.ngenuity.com
 ads.nikkeibp.co.jp
-ads.novanet.vn
 ads.nowrunning.com
 ads.npr.valueclick.net
 ads.ntadvice.com
@@ -164,7 +164,6 @@ ads.pdbarea.com
 ads.pdxguide.com
 ads.peninsulaclarion.com
 ads.penny-arcade.com
-ads.pennyweb.com
 ads.permutive.com
 ads.pg.valueclick.net
 ads.pheedo.com
@@ -179,6 +178,7 @@ ads.postimees.ee
 ads.premiumnetwork.com
 ads.primaryclick.com
 ads.primeinteractive.net
+ads.printscr.com
 ads.profitsdeluxe.com
 ads.pubsqrd.com
 ads.quicken.com
@@ -215,6 +215,7 @@ ads.skinected.com
 ads.smaato.net
 ads.smartclicks.net
 ads.smartdevicemedia.com
+ads.smartolution.com
 ads.sohh.com
 ads.somethingawful.com
 ads.songs.pk
@@ -300,7 +301,6 @@ ads.xboxic.com
 ads.xposed.com
 ads.xtramsn.co.nz
 ads.xxxbunker.com
-ads.y-0.net
 ads.yieldmedia.net
 ads.youporn.com
 ads.zap2it.com
@@ -475,7 +475,6 @@ ads6-us-east-fo.stickyadstv.com
 ads6.ad-flow.com
 ads6.advance.net
 ads6.advertwizard.com
-ads6.kompasads.com
 ads6.udc.advance.net
 ads60-us-east.stickyadstv.com
 ads60.vertamedia.com
@@ -507,7 +506,6 @@ ads90-us-east.stickyadstv.com
 ads94-us-east.stickyadstv.com
 adsadmin.aspentimes.com
 adsadmin.vaildaily.com
-adsame1.cnr.cn
 adsaudience-uploader.truecaller.com
 adsbang.top
 adsbc.pp.ua
@@ -515,11 +513,9 @@ adsbizsimple.com
 adscdn.baidu.cn
 adsclick.yx.js.cn
 adsclock.adk2x.com
-adsdk.com
 adsearch.www1.biz
 adselector.ru
 adsellers.net
-adsense.html5.qq.com
 adsentnetwork.com
 adserer.ihigh.com
 adserv.aip.org
@@ -609,11 +605,13 @@ adserver.digitalpartners.com
 adserver.directforce.net
 adserver.dotcommedia.de
 adserver.eham.net
+adserver.ekokatu.com
 adserver.emapadserver.com
 adserver.emporis.com
 adserver.eudora.com
 adserver.eva2000.com
 adserver.expatica.nxs.nl
+adserver.eyeonx.ch
 adserver.ezzhosting.com
 adserver.fmpub.net
 adserver.fr.adtech.de
@@ -623,6 +621,7 @@ adserver.garden.com
 adserver.gecce.com
 adserver.getcomics.info
 adserver.gunaxin.com
+adserver.hardwareanalysis.com
 adserver.harvestadsdepot.com
 adserver.hi-m.de
 adserver.hispavista.com
@@ -758,7 +757,7 @@ adsm.soush.com
 adsmwt.com
 adsnew.internethaber.com
 adsnew.userfriendly.org
-adsolution.imtt.qq.com
+adsonar.com
 adsparc.adswizz.com
 adspiro.pl
 adspr.haber7.net
@@ -787,7 +786,6 @@ adstalkmedia.g2afse.com
 adstalkmedia.go2affise.com
 adstat.cp11.ott.cibntv.net
 adstatic.ameba.jp
-adstats.tencentmusic.com
 adsted.adk2x.com
 adstra.adk2x.com
 adstrac.adk2x.com
@@ -796,8 +794,12 @@ adstract.adk2x.com
 adstream.123.sogoucdn.com
 adstreams.org
 adsupp.network
+adsv.lavanetwork.net
+adsview2.qq.com
 adsvr.adknowledge.com
 adsweb.tiscali.cz
+adsxgm.com
+adsy.mail.bg
 adsyndication.yelldirect.com
 adsys.adk2x.com
 adsys.chinacloudapp.cn
@@ -812,7 +814,6 @@ adthink.adk2x.com
 adthrive-d.openx.net
 adto.adk2x.com
 adtoday.adk2x.com
-adtoll.com
 adtology3.com
 adtomatik.adk2x.com
 adtrack.ministerial5.com
@@ -821,7 +822,6 @@ adtracker.jp
 adtraffic.pl
 adtrovert.com
 adts.btrkpro.com
-adtune.jp
 adtwbjs.adk2x.com
 adtwbjs.com
 adult.foxcounter.com
@@ -841,6 +841,7 @@ adv.grandonmedia.com
 adv.lavanetwork.net
 adv.netshelter.net
 adv.surinter.net
+adv.webvariant.com
 adv.zapal.ru
 adv0005.247realmedia.com
 adv0035.247realmedia.com
@@ -863,14 +864,16 @@ advanter.ru
 advcache.ru
 advcoder.ru
 advelogy.ru
-adveng.hiasys.com
 adventuremedia-d.openx.net
 adveraction.pl
 adversmedia.adk2x.com
 advert.gameranger.com
 advert.gittigidiyor.com
 advert.istanbul.net
+advert.uloz.to
 advert.uzmantv.com
+adverterenbijsbs.nl
+advertica-cdn.com
 advertisedmediagroup-d.openx.net
 advertiser-cn.vizury.com
 advertiser-sg.vizury.com
@@ -880,6 +883,7 @@ advertisers.federatedmedia.net
 advertisers.l.doubleclick.net
 advertisersapi.doubleclick.net
 advertising.aol.com
+advertising.hiasys.com
 advertising.oriel.io
 advertising.zenit.org
 advertland.ru
@@ -899,12 +903,10 @@ advonline.goforandroid.com
 advplace.nuggad.net
 advredirect.net
 advs2sonline.goforandroid.com
-advserver.cgv.vn
 advserver.xyz
 advstat.xunlei.com
 advtracker.ru
 advzilla.com
-adward.ru
 adware.kogaryu.com
 adweb1.hornymatches.com
 adweb2.hornymatches.com
@@ -918,8 +920,8 @@ adwords.google.lloymlincs.com
 adwords.mediaz.vn
 adwww.pubnative.net
 adx-api.a.mobimagic.com
-adx-static.ksosoft.com
 adx.adrenalinesk.sk
+adx.baolongan.vn
 adx.callback.batmobi.net
 adx.gainesvillesun.com
 adx.heraldtribune.com
