@@ -1,7 +1,3 @@
-cdn.reporo.net
-cdn.revcontent.com
-cdn.revenuemantra.com
-cdn.revjet.com
 cdn.rhombusads.com
 cdn.richrelevance.com
 cdn.riverhit.com
@@ -3748,3 +3744,7 @@ collecting-consent.g5e.com
 collecting.click
 collection-day.com
 collection-endpoint-prod.herokuapp.com
+collection-endpoint-staging.herokuapp.com
+collection.location.live.net
+collection.sv.d1.omtrdc.net
+collection.sv.d2.omtrdc.net
