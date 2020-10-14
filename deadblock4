@@ -23,6 +23,7 @@ ads.go2reach.com
 ads.god.co.uk
 ads.grandonmedia.com
 ads.groupcommerce.com
+ads.gsm-exchange.com
 ads.gunaxin.com
 ads.haber3.com
 ads.haber7.net
@@ -46,6 +47,7 @@ ads.id-t.com
 ads.iforex.com
 ads.ihaberadserver.com
 ads.imdb.com
+ads.imeem.com
 ads.imposibil.ro
 ads.indiatimes.com
 ads.indya.com
@@ -153,7 +155,6 @@ ads.oppomobile.com
 ads.orsm.net
 ads.oyungemisi.com
 ads.pandora.tv.net
-ads.panoramtech.net
 ads.papeteka.com
 ads.partner2profit.com
 ads.pastemagazine.com
@@ -163,7 +164,6 @@ ads.pdxguide.com
 ads.peninsulaclarion.com
 ads.penny-arcade.com
 ads.pennyweb.com
-ads.people.com.cn
 ads.permutive.com
 ads.pg.valueclick.net
 ads.pheedo.com
@@ -214,6 +214,7 @@ ads.skinected.com
 ads.smaato.net
 ads.smartclicks.net
 ads.smartdevicemedia.com
+ads.smartolution.com
 ads.sohh.com
 ads.somethingawful.com
 ads.songs.pk
@@ -398,6 +399,7 @@ ads2.mojiva.com
 ads2.mynet.com
 ads2.newtimes.com
 ads2.revenue.net
+ads2.rne.com
 ads2.rp.pl
 ads2.solocpm.com
 ads2.theglobeandmail.com
@@ -458,7 +460,6 @@ ads5-us-east-fo.stickyadstv.com
 ads5.ad-flow.com
 ads5.advance.net
 ads5.advertwizard.com
-ads5.kompasads.com
 ads5.mconetwork.com
 ads5.mojiva.com
 ads5.sabah.com.tr
@@ -515,6 +516,7 @@ adsclock.adk2x.com
 adsearch.www1.biz
 adselector.ru
 adsellers.net
+adsense.html5.qq.com
 adsentnetwork.com
 adserer.ihigh.com
 adserv.aip.org
@@ -550,6 +552,7 @@ adserver-a-mtc.adtechus.com
 adserver-a-scd.adtechus.com
 adserver-a-toy.adtechjp.com
 adserver-dpamt.adtech.de
+adserver-east1.veruta.com
 adserver-h.juicyads.com
 adserver-jp.vizury.com
 adserver-nbamt.adtech.de
@@ -774,7 +777,6 @@ adsrvgateway.com
 adsrvmedia.adk2x.com
 adsrvr.receptiv.com
 adsrvx.com
-adss.video.qq.com
 adssl01.adtech.de
 adssl02.adtech.de
 adssrv.adk2x.com
@@ -806,9 +808,7 @@ adthink.adk2x.com
 adthrive-d.openx.net
 adto.adk2x.com
 adtoday.adk2x.com
-adtoll.com
 adtology3.com
-adtomafusion.net
 adtomatik.adk2x.com
 adtrack.ministerial5.com
 adtracker.inmobi.com
@@ -833,6 +833,8 @@ adv.elaana.com
 adv.federalpost.ru
 adv.grandonmedia.com
 adv.lavanetwork.net
+adv.mezon.ru
+adv.mobsmart.net
 adv.netshelter.net
 adv.surinter.net
 adv.webvariant.com
@@ -862,11 +864,9 @@ adveng.hiasys.com
 adventuremedia-d.openx.net
 adveraction.pl
 adversmedia.adk2x.com
-adversting.riamedia.com.ua
 advert.gameranger.com
 advert.gittigidiyor.com
 advert.istanbul.net
-advert.uloz.to
 advert.uzmantv.com
 advertica-cdn.com
 advertisedmediagroup-d.openx.net
@@ -940,6 +940,7 @@ adzuriteintl.g2afse.com
 adzworld.in
 ae-gb.adskeeper.co.uk
 ae-gb.mgid.com
+ae.amgdgt.com
 ae.goodsblock.marketgid.com
 ae.goodsblock.mgid.com
 ae25079147984d4d.com
