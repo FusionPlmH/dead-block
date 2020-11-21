@@ -14,7 +14,6 @@ ads.cluster01.oasis.zmh.zope.net
 ads.cmediaworld.com
 ads.cmg.valueclick.net
 ads.cnn.com
-ads.cobrad.com
 ads.collegehumor.com
 ads.comediagroup.hu
 ads.comicbookresources.com
@@ -25,7 +24,6 @@ ads.cyberfight.ru
 ads.cybertrader.com
 ads.danworld.net
 ads.darkhardware.com
-ads.data.pplive.com
 ads.datinggold.com
 ads.dbforums.com
 ads.ddj.com
@@ -36,6 +34,7 @@ ads.developershed.com
 ads.digitalhealthcare.com
 ads.discovery.com
 ads.doclix.com
+ads.dofunapps.com
 ads.doko.jp
 ads.dontpanicmedia.com
 ads.dothads.com
@@ -60,7 +59,6 @@ ads.first-response.be
 ads.flabber.nl
 ads.forbes.com
 ads.foxnews.com
-ads.fptplay.net.vn
 ads.freebannertrade.com
 ads.freecaster.tv
 ads.fresnobee.com
@@ -119,6 +117,7 @@ ads.jokaroo.com
 ads.jornadavirtual.com.mx
 ads.juneauempire.com
 ads.justrelevant.com
+ads.jwtt3.com
 ads.kazaa.com
 ads.kiosked.com
 ads.kixer.com
@@ -137,6 +136,7 @@ ads.lycos-europe.com
 ads.macnews.de
 ads.macupdate.com
 ads.madison.com
+ads.mail.bg
 ads.mail.com
 ads.maksimum.net
 ads.mambocommunities.com
@@ -191,15 +191,18 @@ ads.onlineathens.com
 ads.onlinevenditatio.space
 ads.ookla.com
 ads.orsm.net
+ads.p.veruta.com
 ads.pandora.tv.net
 ads.papeteka.com
 ads.partner2profit.com
 ads.pastemagazine.com
 ads.pcper.com
+ads.pdbarea.com
 ads.pdxguide.com
 ads.peninsulaclarion.com
 ads.penny-arcade.com
 ads.pennyweb.com
+ads.people.com.cn
 ads.pg.valueclick.net
 ads.pheedo.com
 ads.phillyburbs.com
@@ -214,6 +217,7 @@ ads.prd.ie.internal.unity3d.com
 ads.premiumnetwork.com
 ads.primaryclick.com
 ads.primeinteractive.net
+ads.printscr.com
 ads.profitsdeluxe.com
 ads.pubsqrd.com
 ads.quicken.com
@@ -282,6 +286,7 @@ ads.tricityherald.com
 ads.tucows.com
 ads.turkticaret.net
 ads.tw.adsonar.com
+ads.twojatv.info
 ads.ucomics.com
 ads.uigc.net
 ads.ultimatesurrender.com
@@ -294,15 +299,14 @@ ads.verkata.com
 ads.vesperexchange.com
 ads.vg.basefarm.net
 ads.viddler.com
-ads.vietbao.vn
 ads.viewlondon.co.uk
 ads.vimg.net
 ads.vnuemedia.com
+ads.voiceads.cn
 ads.vs.co
 ads.vs.com
 ads.waframedia1.com
 ads.wanadooregie.com
-ads.waps.cn
 ads.warcry.com
 ads.watershed-publishing.com
 ads.wave.si
@@ -329,7 +333,6 @@ ads.xboxic.com
 ads.xposed.com
 ads.xtramsn.co.nz
 ads.xxxbunker.com
-ads.y-0.net
 ads.yieldmedia.net
 ads.youporn.com
 ads.zap2it.com
@@ -358,7 +361,6 @@ ads1.nexdra.com
 ads1.perfadbrite.com.akadns.net
 ads1.performancingads.com
 ads1.revenue.net
-ads1.rne.com
 ads1.sptimes.com
 ads1.theglobeandmail.com
 ads1.ucomics.com
@@ -453,7 +455,9 @@ adsadmin.aspentimes.com
 adsadmin.vaildaily.com
 adsbizsimple.com
 adscdn.baidu.cn
+adsclick.qq.com
 adsearch.www1.biz
+adsense.html5.qq.com
 adsentnetwork.com
 adserer.ihigh.com
 adserv.aip.org
@@ -478,7 +482,6 @@ adserv008.adtech.de
 adservant.guj.de
 adserve.adtoll.com
 adserve.canadawidemagazines.com
-adserve.city-ad.com
 adserve.cpmba.se
 adserve.podaddies.com
 adserve.splicetoday.com
@@ -493,7 +496,6 @@ adserver.adremedy.com
 adserver.adserver.com.pl
 adserver.adsimsar.net
 adserver.adsincontext.com
-adserver.advertist.com
 adserver.affiliation.com
 adserver.aim4media.com
 adserver.akqa.net
@@ -618,7 +620,6 @@ adserver2.realtracker.com
 adserver2.teracent.net
 adserver3.eudora.com
 adserver4.eudora.com
-adserver9.contextad.com
 adserverb.conjelco.com
 adservices.google.com
 adservices.picadmedia.com
@@ -629,16 +630,15 @@ adservingcentral.com
 adserwer.o2.pl
 adsfeed.brabys.com
 adshark.site
-adshmct.qq.com
 adsintl.starwave.com
 adslala.com
 adsm.soush.com
 adsmarket.com
 adsnew.internethaber.com
 adsnew.userfriendly.org
+adsonar.com
 adspiro.pl
 adspr.haber7.net
-adsqqclick.qq.com
 adsr3pg.com.br
 adsrc.bankrate.com
 adsremote.scripps.com
@@ -658,5 +658,4 @@ adstat.cp11.ott.cibntv.net
 adstatic.ameba.jp
 adstract.adk2x.com
 adstreams.org
-adsv.lavanetwork.net
 adsvr.adknowledge.com
