@@ -12,7 +12,7 @@ jobs:
     - name: Ready to Go
       run: |    
         wget --no-check-certificate -t 1 -T 10 -O block https://raw.githubusercontent.com/neodevpro/neodevhost/master/testblock        
-        split -l 2339 block -a 2 -d splitblock
+        split -l 2470 block -a 2 -d splitblock
         
     - name: push
       uses: github-actions-x/commit@v2.7
