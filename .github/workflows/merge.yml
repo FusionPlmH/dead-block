@@ -54,6 +54,7 @@ jobs:
         wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock36
         wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock37
         wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock38
+        wget --no-check-certificate -t 1 -T 10 https://raw.githubusercontent.com/FusionPlmH/dead-block/master/deadblock39
         cat deadblock* >> tmpblock
         sort -u tmpblock > deadblock
         rm tmpblock
