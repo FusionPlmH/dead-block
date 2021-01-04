@@ -3,7 +3,6 @@ config.adsage.cn
 config.adsage.com
 config.appjolt.com
 config.baofeng.net
-config.mobisage.cn
 config.sentinel.mob.com
 configsysrc.info
 conhostservice.com
@@ -116,14 +115,13 @@ count.1133.cc
 count.atm.youku.com
 count.casino-trade.com
 count.cpm.cm.kankan.com
+count.enet.com.cn
 count.iyaxin.com
+count.kandian.com
 count.livetv.ru
 count.livetv.sx
-count.nuanyuehanxing.com
 count.pcgames.com.cn
 count.qiqipower.com
-count.video.sina.com.cn
-count.west263.com
 count.xhit.com
 count3.mobi
 countatm.cp12.wasu.tv
@@ -142,9 +140,9 @@ counter.hdvb.info
 counter.htmlvalidator.com
 counter.impressur.com
 counter.inti.fr
-counter.kingsoft.com
 counter.ksosoft.com
 counter.netmore.net
+counter.nowlinux.com
 counter.opinion.com.ua
 counter.pcgames.de
 counter.promodeejay.net
@@ -167,6 +165,8 @@ counters.xaraonline.com
 countersys.cn
 countimo.de
 countingbiz.info
+countpage.sznews.com
+countpvn.light.fang.com
 countubn.light.soufun.com
 coupongifts.life
 couqm.com.cn
@@ -196,12 +196,16 @@ cpm.admob.com
 cpm.cm.kankan.com
 cpm.cm.sandai.net
 cpm2.admob.com
+cpms.now.com
 cprekl.com
 cpro.baidu.cn
 cpro.tieba.baidu.com
+cpro.zhidao.baidu.com
 cpro2.baidu.cn
 cpro2.baidu.com
+cps.360buy.com
 cpshwl.cn
+cpu.baidu.com
 cpu.firingsquad.com
 cpu2cash.link
 cpufan.cl
@@ -230,6 +234,7 @@ cralp.cn
 crapka.ru
 crazylead.com
 crca.pl
+cre-dp.sina.cn
 cre.adjust-net.jp
 creampie.afdss.info
 creara-media.com
@@ -257,6 +262,7 @@ crllmzsy.top
 crm-eve.b2b.alibaba-inc.com
 crm.cleverads.vn
 crm.zenguard.biz
+crmbizfly.todo.vn
 crowd.xiaohui4.cn
 crownclam.com
 crs.baidu.cn
@@ -291,6 +297,7 @@ csk2014.info
 csm.rotator.hadj7.adjuggler.net
 csmcfetvb.com
 csnem.ru
+csoonlinecom.112.2o7.net
 css-style-95.com
 css.juqingba.cn
 css888.bceapp.com
@@ -305,6 +312,7 @@ ct.36900pf.com
 ct.buzzfeed.com
 ct.hf01il.com
 ct.impactradius.com
+ct1.xrea.com
 ctc.fe01.c3.xiaomi.com
 ctc.fe02.c3.xiaomi.com
 ctiev.com
@@ -313,6 +321,7 @@ ctlrnwbv.ru
 ctqoduhdji.com
 ctrack.optin-global.net
 ctrack07.optin-global.net
+ctrhfd.top
 ctripatm.cn
 cts.channelintelligence.com
 cu.versiondat.xyz
@@ -383,7 +392,6 @@ cwkhyupiwzcjy.com
 cwnrunnvatbfug.com
 cworsbumjgbuc.com
 cwpumsjshnacl.com
-cwrg17.vjlfcpvc5a.top
 cwzx.dengfenzhang.cn
 cx.ifengbi.com
 cxaerp.com
@@ -405,7 +413,6 @@ cy-block.cn
 cyad456.com
 cyber-incentives.com
 cybereleague.com
-cybermonitor.com
 cyberwing.co.jp
 cyboke.cn
 cybugim4bdzqhwl.ru
@@ -418,7 +425,7 @@ cyqbtxpgarmc.com
 cyylove.com
 cz01016102.ms758.com
 cz345.cn
-czaspolaka.eu
+cz8.clickzzs.nl
 czcetfjlisyjh.com
 czdqhyo1.net
 czgmlnhz.com
@@ -435,6 +442,7 @@ d.adnetxchange.com
 d.adresult-sp.jp
 d.ads.readwriteweb.com
 d.adserve.com
+d.ants.vn
 d.biboi.cn
 d.cfcnet.top
 d.cpufan.club
@@ -444,9 +452,9 @@ d.dsgy521.com
 d.dsp.imageter.com
 d.feih.com.cn
 d.gz2010.cn
-d.hgame.com
 d.hzblic.com
 d.kglink.cn
+d.kugou.com
 d.land.to
 d.lionettrip.xyz
 d.lqrzc.com
@@ -469,6 +477,8 @@ d.zeroredirect.com
 d04b7831b4690.com
 d08kfa.cn
 d0eda50bf4f7d172c06.com
+d1.adsplay.net
+d1.mobaders.com
 d1.openx.org
 d1.zhuangxiu6.com
 d10g3hyu3zeg91.cloudfront.net
@@ -489,7 +499,6 @@ d1skp.cn
 d1wscoizcbxzhp.cloudfront.net
 d1yu5hbtu8mng9.cloudfront.net
 d1zkodo2u3p4pe.cloudfront.net
-d2.adsplay.net
 d26sio54efdz72.cloudfront.net
 d2bgg7rjywcwsy.cloudfront.net
 d2bj2texxib1qg.cloudfront.net
@@ -505,7 +514,9 @@ d2r7bmv6l6bnd1.cloudfront.net
 d2so4705rl485y.cloudfront.net
 d2szg1g41jt3pq.cloudfront.net
 d2xgf76oeu9pbh.cloudfront.net
+d3.adsplay.net
 d3.adsplay.xyz
+d3.mobaders.com
 d3135glefggiep.cloudfront.net
 d33im0067v833a.cloudfront.net
 d36wtdrdo22bqa.cloudfront.net
@@ -522,4 +533,3 @@ d3phbp7p78bdk9.cloudfront.net
 d3r6awv9ysiyn4.cloudfront.net
 d3s5kn5t.cn
 d3td6g0k30g56f.cloudfront.net
-d4.adsplay.net
