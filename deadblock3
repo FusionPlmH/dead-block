@@ -33,7 +33,6 @@ ads.ookla.com
 ads.oppomobile.com
 ads.orsm.net
 ads.oyungemisi.com
-ads.p.veruta.com
 ads.pandora.tv.net
 ads.panoramtech.net
 ads.papeteka.com
@@ -146,12 +145,10 @@ ads.verkata.com
 ads.vesperexchange.com
 ads.vg.basefarm.net
 ads.viddler.com
-ads.vietbao.vn
 ads.viewlondon.co.uk
 ads.vimg.net
 ads.vkushti.tv
 ads.vnuemedia.com
-ads.voiceads.cn
 ads.vs.co
 ads.vs.com
 ads.waframedia1.com
@@ -214,6 +211,7 @@ ads1.nexdra.com
 ads1.perfadbrite.com.akadns.net
 ads1.performancingads.com
 ads1.revenue.net
+ads1.rne.com
 ads1.sptimes.com
 ads1.theglobeandmail.com
 ads1.ucomics.com
@@ -263,7 +261,6 @@ ads2.udc.advance.net
 ads2.vasmg.com
 ads2.virtumundo.com
 ads2.zdnet.com
-ads280dummy.com
 ads3.ad-flow.com
 ads3.adman.gr
 ads3.advance.net
@@ -297,11 +294,11 @@ ads5.virtumundo.com
 ads6.ad-flow.com
 ads6.advance.net
 ads6.advertwizard.com
-ads6.gamecity.net
 ads6.udc.advance.net
 ads7.ad-flow.com
 ads7.advance.net
 ads7.advertwizard.com
+ads7.gamecity.net
 ads7.udc.advance.net
 ads8.ad-flow.com
 ads8.advertwizard.com
@@ -318,6 +315,7 @@ adscdn.baidu.cn
 adsclick.yx.js.cn
 adscpm.site
 adscript.gmarket.co.kr
+adsdk.com
 adsearch.www1.biz
 adselector.ru
 adsentnetwork.com
@@ -358,6 +356,7 @@ adserver.adremedy.com
 adserver.adserver.com.pl
 adserver.adsimsar.net
 adserver.adsincontext.com
+adserver.advertist.com
 adserver.affiliation.com
 adserver.aim4media.com
 adserver.akqa.net
@@ -409,6 +408,7 @@ adserver.ig.com.br
 adserver.ign.com
 adserver.ilounge.com
 adserver.infinit.net
+adserver.isonews.com
 adserver.ixm.co.uk
 adserver.jacotei.com.br
 adserver.janes.net
@@ -421,7 +421,6 @@ adserver.m2kcore.com
 adserver.mobillex.com
 adserver.monstersandcritics.com
 adserver.motonews.pl
-adserver.msmb.biz
 adserver.netshelter.net
 adserver.newdigitalgroup.com
 adserver.newmassmedia.net
@@ -480,6 +479,7 @@ adserver2.adserver.com.pl
 adserver2.christianitytoday.com
 adserver2.condenast.co.uk
 adserver2.eudora.com
+adserver2.mediainsight.de
 adserver2.news-journalonline.com
 adserver2.popdata.de
 adserver2.realtracker.com
@@ -499,8 +499,10 @@ adsfeed.brabys.com
 adsgid.com
 adsglow.net
 adshark.site
+adshmct.qq.com
 adshob.com
 adshost.site
+adsina.allyes.com
 adsintl.starwave.com
 adsivo.pl
 adslala.com
@@ -510,10 +512,10 @@ adsmarket.com
 adsmwt.com
 adsnew.internethaber.com
 adsnew.userfriendly.org
+adsonar.com
 adspiro.pl
 adspr.haber7.net
 adspserving.com
-adsqqclick.qq.com
 adsr3pg.com.br
 adsrc.bankrate.com
 adsremote.scripps.com
@@ -529,9 +531,7 @@ adsrvgateway.com
 adsrvmedia.adk2x.com
 adsrvx.com
 adssl01.adtech.de
-adssl01.adtech.fr
 adssl02.adtech.de
-adssl02.adtech.fr
 adssrv.nationmultimedia.com
 adstat.cp11.ott.cibntv.net
 adstatic.ameba.jp
@@ -564,6 +564,7 @@ adtransfer.net
 adtrovert.com
 adtwbjs.com
 aduic.com
+adultlinksco.com
 adultmild.com
 adulttds.com
 adv-target.ru
@@ -578,6 +579,7 @@ adv.freepornvs.com
 adv.grandonmedia.com
 adv.lavanetwork.net
 adv.mediaharbor.co.kr
+adv.mezon.ru
 adv.mobsmart.net
 adv.netshelter.net
 adv.surinter.net
@@ -600,18 +602,17 @@ advcache.ru
 advcoder.ru
 advelogy.ru
 adveng.hiasys.com
+adver.qq.com
 adveraction.pl
 advert.gameranger.com
 advert.gittigidiyor.com
 advert.istanbul.net
-advert.uloz.to
 advert.uzmantv.com
 adverterenbijsbs.nl
 advertisement.tanx.com
 advertiser.ad360.vn
 advertisers.federatedmedia.net
 advertising.aol.com
-advertising.hiasys.com
 advertising.zenit.org
 advertland.ru
 advertoly.com
@@ -628,6 +629,7 @@ advplace.nuggad.net
 advredirect.net
 advs2sonline.goforandroid.com
 advsense.info
+advserver.cgv.vn
 advserver.xyz
 advstat.xunlei.com
 advtracker.ru
@@ -647,12 +649,8 @@ adx.adhce.cn
 adx.adk2x.com
 adx.admaster.com.cn
 adx.adrenalinesk.sk
-adx.baolongan.vn
-adx.edutimes.com.vn
 adx.gainesvillesun.com
 adx.heraldtribune.com
-adx.kul.vn
-adx.pro.cn
 adx3.iq39.com
 adxgeeks.com
 adxite-ads.com
@@ -718,4 +716,5 @@ affiliate.productreview.com.au
 affiliate.tokyo-tube-ad.com
 affiliatehub.skybet.com
 affiliates.bookdepository.com
+affiliates.vpn.ht
 affiliateserver.hangikredi.com
