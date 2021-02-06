@@ -57,7 +57,6 @@ ads.newtention.net
 ads.newtimes.com
 ads.ngenuity.com
 ads.nikkeibp.co.jp
-ads.novanet.vn
 ads.nowrunning.com
 ads.npr.valueclick.net
 ads.ntadvice.com
@@ -81,7 +80,6 @@ ads.pdbarea.com
 ads.pdxguide.com
 ads.peninsulaclarion.com
 ads.penny-arcade.com
-ads.people.com.cn
 ads.pg.valueclick.net
 ads.pheedo.com
 ads.phillyburbs.com
@@ -96,7 +94,6 @@ ads.prd.ie.internal.unity3d.com
 ads.premiumnetwork.com
 ads.primaryclick.com
 ads.primeinteractive.net
-ads.printscr.com
 ads.pubsqrd.com
 ads.quicken.com
 ads.rackshack.net
@@ -149,6 +146,7 @@ ads.techvibes.com
 ads.techweb.com
 ads.telegraaf.nl
 ads.telegraph.co.uk
+ads.telkomsel.com
 ads.the15thinternet.com
 ads.theawl.com
 ads.thegauntlet.com
@@ -185,10 +183,12 @@ ads.viewlondon.co.uk
 ads.vimg.net
 ads.vkushti.tv
 ads.vnuemedia.com
+ads.voiceads.cn
 ads.vs.co
 ads.vs.com
 ads.waframedia1.com
 ads.wanadooregie.com
+ads.wapx.cn
 ads.warcry.com
 ads.watershed-publishing.com
 ads.wave.si
@@ -338,13 +338,13 @@ ads7.advertwizard.com
 ads7.udc.advance.net
 ads8.ad-flow.com
 ads8.advertwizard.com
-ads8.com
 ads8.udc.advance.net
 ads9.ad-flow.com
 ads9.advertwizard.com
 ads9.udc.advance.net
 adsadmin.aspentimes.com
 adsadmin.vaildaily.com
+adsame1.cnr.cn
 adsbang.top
 adsbc.pp.ua
 adsbizsimple.com
@@ -355,7 +355,6 @@ adscript.gmarket.co.kr
 adsdk.com
 adsearch.www1.biz
 adselector.ru
-adsence.sogou.com
 adsentnetwork.com
 adserer.ihigh.com
 adserv.aip.org
@@ -413,6 +412,7 @@ adserver.buttonware.net
 adserver.cheatplanet.com
 adserver.clix.pt
 adserver.clubic.com
+adserver.clundressed.com
 adserver.colleges.com
 adserver.com-solutions.com
 adserver.comparatel.fr
@@ -436,6 +436,7 @@ adserver.gamesquad.net
 adserver.garden.com
 adserver.gecce.com
 adserver.gunaxin.com
+adserver.hardwareanalysis.com
 adserver.harvestadsdepot.com
 adserver.hispavista.com
 adserver.hk.outblaze.com
@@ -523,7 +524,6 @@ adserver3.eudora.com
 adserver4.eudora.com
 adserverb.conjelco.com
 adserviceretry.kglink.cn
-adserviceretry.kugou.com
 adservices.google.com
 adservices.picadmedia.com
 adservicestats.com
@@ -536,6 +536,7 @@ adsfile.bssdlbig.kugou.com
 adsgid.com
 adsglow.net
 adshark.site
+adshmmsg.qq.com
 adshob.com
 adshost.site
 adsina.allyes.com
@@ -569,11 +570,11 @@ adssl02.adtech.de
 adssrv.nationmultimedia.com
 adstat.cp11.ott.cibntv.net
 adstatic.ameba.jp
+adstextview.qq.com
 adstract.adk2x.com
 adstream.123.sogoucdn.com
 adstreams.org
 adsupp.network
-adsview.qq.com
 adsvr.adknowledge.com
 adsweb.tiscali.cz
 adsxgm.com
@@ -594,7 +595,6 @@ adtracker.jp
 adtraffic.pl
 adtransfer.net
 adtrovert.com
-adtune.jp
 adtwbjs.com
 aduic.com
 adultlinksco.com
@@ -609,12 +609,13 @@ adv.bannercity.ru
 adv.bookclubservices.ca
 adv.elaana.com
 adv.federalpost.ru
-adv.fjtv.net
 adv.freepornvs.com
 adv.grandonmedia.com
 adv.lavanetwork.net
+adv.madserving.com
 adv.mediaharbor.co.kr
 adv.netshelter.net
+adv.s8bbs.com
 adv.surinter.net
 adv.zapal.ru
 adv0005.247realmedia.com
@@ -635,9 +636,8 @@ advcache.ru
 advcoder.ru
 advelogy.ru
 adveng.hiasys.com
-adver.qq.com
+adver.pengyou.com
 adveraction.pl
-adverserve.net
 advert.gameranger.com
 advert.gittigidiyor.com
 advert.istanbul.net
@@ -669,7 +669,6 @@ advstat.xunlei.com
 advtracker.ru
 advvideo.com
 advzilla.com
-adward.ru
 adware.kogaryu.com
 adwasd.xuezuocai88.com
 adweb1.hornymatches.com
@@ -680,6 +679,7 @@ adwiretracker.fwix.com
 adwords.google.lloymlincs.com
 adwords.mediaz.vn
 adx-api.a.mobimagic.com
+adx-static.ksosoft.com
 adx.adhce.cn
 adx.adk2x.com
 adx.admaster.com.cn
@@ -700,6 +700,7 @@ adzone.stltoday.com
 adzservice.theday.com
 adzworld.in
 ae-gb.mgid.com
+ae.bdstatic.com
 ae.goodsblock.marketgid.com
 ae25079147984d4d.com
 ae3482c74b1a99f.com
@@ -707,9 +708,9 @@ ae7c783736eb2ff.com
 aec.shjk123.net
 aeeefzfuk.com
 aeghae5y.com
-aegis.qq.com
 aegzjowko.com
 aehdgzigy.com
+aeimqu.yhqjqc.cn
 aepetor.pw
 aercxy.com
 aeros02.tk
