@@ -53,6 +53,7 @@ ads.infospace.com
 ads.insidehighered.com
 ads.inthesidebar.com
 ads.iol.co.il
+ads.isat-tech.com
 ads.isum.de
 ads.itsgroup.vn
 ads.iwangmedia.com
@@ -72,6 +73,7 @@ ads.kixer.com
 ads.kleinman.com
 ads.kmpads.com
 ads.kokteyl.com
+ads.latinongroup.com
 ads.leo.org
 ads.lilengine.com
 ads.linksrequest.com
@@ -86,7 +88,6 @@ ads.lycos-europe.com
 ads.macnews.de
 ads.macupdate.com
 ads.madison.com
-ads.mail.bg
 ads.mail.com
 ads.maist.jp
 ads.maksimum.net
@@ -95,6 +96,7 @@ ads.marvel.com
 ads.matiro.com
 ads.matomymobile.com
 ads.mdotm.com
+ads.mediamayhemcorp.com
 ads.meropar.jp
 ads.miidi.net
 ads.milliyet.cubecdn.net
@@ -150,7 +152,6 @@ ads.oppomobile.com
 ads.orsm.net
 ads.oyungemisi.com
 ads.pandora.tv.net
-ads.panoramtech.net
 ads.papeteka.com
 ads.partner2profit.com
 ads.pastemagazine.com
@@ -159,7 +160,6 @@ ads.pdbarea.com
 ads.pdxguide.com
 ads.peninsulaclarion.com
 ads.penny-arcade.com
-ads.people.com.cn
 ads.pg.valueclick.net
 ads.pheedo.com
 ads.phillyburbs.com
@@ -169,6 +169,7 @@ ads.planet-f1.com
 ads.plantyours.com
 ads.pno.net
 ads.pointroll.com
+ads.popfolkstars.com
 ads.portlandmercury.com
 ads.postimees.ee
 ads.prd.ie.internal.unity3d.com
@@ -214,6 +215,7 @@ ads.songs.pk
 ads.specificclick.com
 ads.specificpop.com
 ads.sptimes.com
+ads.static.madserving.com
 ads.stickyadstv.com.akadns.net
 ads.stupid.com
 ads.sumotorrent.com
@@ -327,7 +329,6 @@ ads1.nexdra.com
 ads1.perfadbrite.com.akadns.net
 ads1.performancingads.com
 ads1.revenue.net
-ads1.rne.com
 ads1.sptimes.com
 ads1.theglobeandmail.com
 ads1.ucomics.com
@@ -371,7 +372,6 @@ ads2.mojiva.com
 ads2.mynet.com
 ads2.newtimes.com
 ads2.revenue.net
-ads2.rne.com
 ads2.rp.pl
 ads2.speedfinancial.online
 ads2.theglobeandmail.com
@@ -459,6 +459,7 @@ adserv008.adtech.de
 adservant.guj.de
 adserve.adtoll.com
 adserve.canadawidemagazines.com
+adserve.city-ad.com
 adserve.cpmba.se
 adserve.podaddies.com
 adserve.profit-smart.com
@@ -502,7 +503,6 @@ adserver.digitalpartners.com
 adserver.directforce.net
 adserver.dotcommedia.de
 adserver.eham.net
-adserver.ekokatu.com
 adserver.emapadserver.com
 adserver.emporis.com
 adserver.eudora.com
@@ -540,6 +540,7 @@ adserver.m2kcore.com
 adserver.mobillex.com
 adserver.monstersandcritics.com
 adserver.motonews.pl
+adserver.msmb.biz
 adserver.netshelter.net
 adserver.newdigitalgroup.com
 adserver.newmassmedia.net
@@ -571,6 +572,7 @@ adserver.tribuneinteractive.com
 adserver.tsgadv.com
 adserver.tulsaworld.com
 adserver.tutkusunucu.com
+adserver.tweakers.net
 adserver.ugo.com
 adserver.ugo.nl
 adserver.ukplus.co.uk
@@ -620,7 +622,6 @@ adsglow.net
 adshark.site
 adshob.com
 adshost.site
-adsina.allyes.com
 adsintl.starwave.com
 adsivo.pl
 adsk2.co
@@ -631,9 +632,10 @@ adsmoon.com
 adsmwt.com
 adsnew.internethaber.com
 adsnew.userfriendly.org
-adsonar.com
+adsolution.imtt.qq.com
 adspiro.pl
 adspr.haber7.net
+adspserving.com
 adsr3pg.com.br
 adsrc.bankrate.com
 adsremote.scripps.com
@@ -643,12 +645,12 @@ adsrv.eacdn.com
 adsrv.emporis.com
 adsrv.heraldtribune.com
 adsrv.hpg.com.br
+adsrv.kobi.tv
 adsrv.news.com.au
 adsrv1.tapad.com
 adsrvgateway.com
 adsrvmedia.adk2x.com
 adsrvx.com
-adss.video.qq.com
 adssl01.adtech.de
 adssl02.adtech.de
 adssrv.nationmultimedia.com
@@ -677,7 +679,6 @@ adtracker.inmobi.com
 adtracker.jp
 adtraffic.pl
 adtrovert.com
-adtune.jp
 adtwbjs.com
 adultmild.com
 adulttds.com
@@ -685,15 +686,15 @@ adv-target.ru
 adv.0tub.com
 adv.440net.com
 adv.adtotal.pl
-adv.app.qq.com
 adv.bannercity.ru
 adv.bookclubservices.ca
 adv.elaana.com
 adv.federalpost.ru
-adv.fjtv.net
 adv.freepornvs.com
 adv.grandonmedia.com
 adv.lavanetwork.net
+adv.madserving.com
+adv.mezon.ru
 adv.netshelter.net
 adv.surinter.net
 adv.zapal.ru
@@ -716,7 +717,6 @@ advelogy.ru
 adveng.hiasys.com
 adver.com.tw
 adveraction.pl
-adversting.riamedia.com.ua
 advert.gameranger.com
 advert.gittigidiyor.com
 advert.istanbul.net
@@ -755,14 +755,13 @@ adwiretracker.fwix.com
 adwords.google.lloymlincs.com
 adwords.mediaz.vn
 adx-api.a.mobimagic.com
+adx-static.ksosoft.com
 adx.adhce.cn
 adx.adk2x.com
 adx.admaster.com.cn
 adx.adrenalinesk.sk
 adx.gainesvillesun.com
 adx.heraldtribune.com
-adx.vn
 adx3.iq39.com
 adxgeeks.com
 adxite-ads.com
-adxpd.dable.io
