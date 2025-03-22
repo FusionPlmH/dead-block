@@ -26,10 +26,10 @@ dns_lookup_over_tcp: False
 # Note:
 #   The following format is expected if you want to give custom dns server.
 #
-#       dns_server:
-#         - "8.8.8.8" # First DNS server.
-#         - "8.8.4.4" # Second DNS server.
-dns_server: null
+       dns_server:
+         - "8.8.8.8" # First DNS server.
+         - "1.1.1.1" # Second DNS server.
+
 # Set the element to filter.
 filter: ""
 # Enable / disable the generation of complements.
