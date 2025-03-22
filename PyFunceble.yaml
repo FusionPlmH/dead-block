@@ -25,11 +25,7 @@ dns_lookup_over_tcp: False
 # Set the DNS server to use. If None is given we use the one given by the OS.
 # Note:
 #   The following format is expected if you want to give custom dns server.
-#
-       dns_server:
-         - "8.8.8.8" # First DNS server.
-         - "1.1.1.1" # Second DNS server.
-
+dns_server: null
 # Set the element to filter.
 filter: ""
 # Enable / disable the generation of complements.
