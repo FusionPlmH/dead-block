@@ -2,8 +2,6 @@
 
 name: split
 on:
-#  schedule:
-#    - cron:  "55 * * * *"
   workflow_dispatch:
 jobs:
   build:

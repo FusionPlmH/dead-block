@@ -1,0 +1,18 @@
+name: Trigger All Checkblock Workflows
+on:
+    workflow_dispatch:
+jobs:
+  trigger-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger checkblock workflows every 10 seconds for 1 minute
+        run: |
+          for i in {1..6}; do
+            echo "Iteration $i"
+            for n in {0..29}; do
+              gh workflow run checkblock${n}.yml
+            done
+            sleep 10
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

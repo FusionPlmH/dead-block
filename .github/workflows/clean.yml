@@ -1,7 +1,5 @@
 name: clean
 on:
-#  schedule:
-#    - cron:  "01 * * * *"
   workflow_dispatch:
 jobs:
   build:
