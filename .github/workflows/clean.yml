@@ -10,13 +10,14 @@ jobs:
     - uses: actions/checkout@v4.2.2  # updated from v2
     - name: Ready to Go
       run: |
-        rm splitblock*
+        rm -rf splitblock*
+        rm -rf deadblock*
+        
     - uses: stefanzweifel/git-auto-commit-action@v5.1.0
       with:
-           commit_message: Auto Update
            branch: master
-           commit_options: '--no-verify --signoff'
            repository: .
            commit_user_name: FusionPlmH
            commit_user_email: leemenhin@gmail.com
            push_options: '--force'
+           skip_dirty_check: true

@@ -11,14 +11,10 @@ jobs:
     - name: Ready to Go
       run: |
         python3 -m pip install -U pip
-        mkdir /home/runner/.config/PyFunceble
         pip3 install setuptools
         pip3 install wheel
         pip3 install pyfunceble
-        rm -rf deadblock12
-        cp PyFunceble.yaml /home/runner/.config/PyFunceble/.PyFunceble.yaml
-        python3 checkblock12.py
-        rm -rf splitblock12
+        sh check12.sh
 
     - name: push
       uses: github-actions-x/commit@v2.9  # updated from v2.7
