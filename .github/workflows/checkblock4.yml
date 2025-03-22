@@ -13,6 +13,7 @@ jobs:
         python3 -m pip install -U pip
         pip3 install setuptools
         pip3 install wheel
+        pip3 install pyfunceble
         sh check4.sh
 
     - name: push
