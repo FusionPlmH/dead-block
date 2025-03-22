@@ -13,16 +13,16 @@ jobs:
     - name: Ready to Go
       run: |    
         wget --no-check-certificate -t 1 -T 10 -O block https://raw.githubusercontent.com/neodevpro/neodevhost/master/block        
-  
-    - name: Git Auto Commit
-      uses: stefanzweifel/git-auto-commit-action@v5.1.0
+        split -l 3200 block -a 2 -d splitblock
+        
+    - name: push
+      uses: github-actions-x/commit@v2.9  # updated from v2.7
       with:
-           commit_message: Auto Update
-           branch: master
-           commit_options: '--no-verify --signoff'
-           file_pattern: deadblock
-           repository: .
-           commit_user_name: FusionPlmH
-           commit_user_email: leemenhin@gmail.com
-           push_options: '--force'
-           skip_dirty_check: true
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'master'
+        commit-message: 'Add Deadhost'
+        force-add: 'true'
+        files: splitblock*
+        name: FusionPlmH
+        email: leemenhin@gmail.com
+        rebase: 'true'
