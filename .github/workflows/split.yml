@@ -11,7 +11,7 @@ jobs:
     - name: Ready to Go
       run: |    
         wget --no-check-certificate -t 1 -T 10 -O block https://raw.githubusercontent.com/neodevpro/neodevhost/master/block        
-        split -l 3200 block -a 2 -d splitblock
+        split -l 3500 block -a 2 -d splitblock
         
     - name: push
       uses: github-actions-x/commit@v2.9  # updated from v2.7
@@ -24,3 +24,4 @@ jobs:
         name: FusionPlmH
         email: leemenhin@gmail.com
         rebase: 'true'
+
