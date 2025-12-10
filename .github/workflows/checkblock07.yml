@@ -23,7 +23,7 @@ jobs:
         push-branch: 'master'
         commit-message: 'Add Deadhost'
         force-add: 'true'
-        files: deadblock07
+        files: deadblock7
         name: FusionPlmH
         email: leemenhin@gmail.com
         rebase: 'true'
