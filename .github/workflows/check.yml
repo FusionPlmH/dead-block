@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
-      CHECK_CONCURRENCY: 200
+      CHECK_CONCURRENCY: 2000
     steps:
       - uses: actions/checkout@v7.0.1
 
