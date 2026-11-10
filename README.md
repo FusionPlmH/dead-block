@@ -11,7 +11,7 @@ from its block list are kept:
 
 1. download <https://raw.githubusercontent.com/neodevpro/neodevhost/master/block>
 2. add the names already recorded in `deadblock`
-3. resolve every domain concurrently (DNS over HTTPS, UDP fallback)
+3. resolve every domain concurrently (DNS over HTTPS, plain HTTP fallback, then UDP)
 4. collect the dead domains in `deadblock.tmp` and swap it into `deadblock` when
    the run finishes
 
@@ -40,9 +40,12 @@ domains when the network starts dropping queries.
 | sinkholed | only `0.0.0.0`/loopback answers (counted separately, added only with `--sinkhole-dead`) |
 | unknown | timeouts or SERVFAIL on every resolver (never written to `deadblock`) |
 
-Lookups run through DNS over HTTPS (Cloudflare and Google) so local DNS filters,
-hosts-file blockers and firewalls that drop UDP/53 cannot skew the result. If no
-DoH endpoint answers, the checker falls back to public UDP resolvers.
+Lookups run through DNS over HTTPS (Cloudflare, Google and AliDNS) so local DNS
+filters, hosts-file blockers and firewalls that drop UDP/53 cannot skew the
+result. If TLS is blocked, the same JSON API is retried over plain HTTP
+(AliDNS), and public UDP resolvers are the last resort.
+
+Plain HTTP is unencrypted, so it is only used when no HTTPS endpoint answers.
 
 A name is only recorded as dead after a second independent resolver confirms it,
 so transient DNS failures never end up in `deadblock`.
@@ -56,7 +59,8 @@ so transient DNS failures never end up in `deadblock`.
 | `--concurrency` | `CHECK_CONCURRENCY` | 400 | parallel lookups |
 | `--timeout` | | 5 | seconds per query |
 | `--tries` | | 2 | attempts per query |
-| `--transport` | `CHECK_TRANSPORT` | `auto` | `auto`, `doh` or `udp` |
+| `--transport` | `CHECK_TRANSPORT` | `auto` | `auto`, `https`, `http` (plain) or `udp` |
+| `--endpoints` | `CHECK_ENDPOINTS` | built-in | comma separated DoH URLs, `http://` or `https://` |
 | `--resolvers` | `CHECK_RESOLVERS` | `auto` | UDP only: `auto`, `system` or `a,b,c` |
 | `--sinkhole-dead` | `CHECK_SINKHOLE_DEAD` | off | treat `0.0.0.0`/loopback-only names as dead |
 | `--no-confirm` | | off | skip the second-resolver confirmation |
@@ -73,5 +77,7 @@ curl -fsSL -o block https://raw.githubusercontent.com/neodevpro/neodevhost/maste
 
 python check.py                 # block -> deadblock
 python check.py --limit 500 --dry-run
-python check.py --transport udp # fall back to plain DNS
+python check.py --transport http       # DNS over plain HTTP only
+python check.py --transport udp        # fall back to plain DNS
+python check.py --endpoints https://dns.google/resolve
 ```

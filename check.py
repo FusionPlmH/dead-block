@@ -13,9 +13,10 @@ reported as unknown and left alone, so transient DNS failures never end up in
 the list.
 
 Resolution uses DNS over HTTPS when possible (immune to local DNS filtering and
-to firewalls that block UDP/53) and falls back to plain UDP resolvers. Results
-are written to ``<output>.tmp`` after every batch and only replace the output
-file when the run completes, so a failed run never truncates the previous list.
+to firewalls that block UDP/53), falls back to the same JSON API over plain HTTP
+when TLS is blocked, and finally to plain UDP resolvers. Results are written to
+``<output>.tmp`` after every batch and only replace the output file when the run
+completes, so a failed run never truncates the previous list.
 """
 
 from __future__ import annotations
@@ -27,6 +28,7 @@ import os
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import aiohttp
 import dns.asyncresolver
@@ -39,7 +41,12 @@ UNKNOWN = "unknown"
 SINKHOLED = "sinkholed"
 
 PUBLIC_RESOLVERS = ("1.1.1.1", "8.8.8.8", "9.9.9.9", "208.67.222.222")
-DOH_ENDPOINTS = ("https://cloudflare-dns.com/dns-query", "https://dns.google/resolve")
+HTTPS_ENDPOINTS = (
+    "https://cloudflare-dns.com/dns-query",
+    "https://dns.google/resolve",
+    "https://dns.alidns.com/resolve",
+)
+HTTP_ENDPOINTS = ("http://223.5.5.5/resolve", "http://dns.alidns.com/resolve")
 SINKHOLE_ADDRESSES = frozenset({"0.0.0.0", "127.0.0.1", "::", "::1"})
 RRTYPE_NUMBERS = {"A": 1, "AAAA": 28, "MX": 15}
 
@@ -202,15 +209,38 @@ async def _doh_reachable(endpoint: str, timeout: float) -> bool:
 
 
 async def build_transport(args: argparse.Namespace):
-    if args.transport in ("auto", "doh"):
-        checks = await asyncio.gather(*(_doh_reachable(endpoint, args.timeout) for endpoint in DOH_ENDPOINTS))
-        endpoints = [endpoint for endpoint, ok in zip(DOH_ENDPOINTS, checks) if ok]
+    mode = "https" if args.transport == "doh" else args.transport
+    custom = [endpoint.strip() for endpoint in args.endpoints.split(",") if endpoint.strip()]
+
+    if mode in ("auto", "https", "http"):
+        if custom:
+            candidates = custom
+        elif mode == "http":
+            candidates = list(HTTP_ENDPOINTS)
+        else:
+            candidates = list(HTTPS_ENDPOINTS)
+
+        checks = await asyncio.gather(*(_doh_reachable(endpoint, args.timeout) for endpoint in candidates))
+        endpoints = [endpoint for endpoint, ok in zip(candidates, checks) if ok]
+
+        # Plain HTTP is unencrypted, so it is only a last resort when TLS is blocked.
+        if not endpoints and mode == "auto" and not custom:
+            checks = await asyncio.gather(*(_doh_reachable(endpoint, args.timeout) for endpoint in HTTP_ENDPOINTS))
+            endpoints = [endpoint for endpoint, ok in zip(HTTP_ENDPOINTS, checks) if ok]
+            if endpoints:
+                print("warning: no DNS over HTTPS endpoint answered, falling back to plain HTTP")
+
         if endpoints:
-            print(f"using DNS over HTTPS: {', '.join(endpoints)}")
+            # The plain HTTP endpoints are heavily rate limited; a few hundred
+            # parallel requests already produce SERVFAIL/timeouts.
+            if all(urlparse(endpoint).scheme == "http" for endpoint in endpoints) and args.concurrency > 200:
+                print(f"capping concurrency to 200 for plain HTTP endpoints (requested {args.concurrency})")
+                args.concurrency = 200
+            print(f"using DNS over HTTP: {', '.join(endpoints)}")
             return DohTransport(endpoints, args.timeout, args.concurrency)
-        if args.transport == "doh":
-            raise SystemExit("no DNS over HTTPS endpoint reachable")
-        print("warning: DNS over HTTPS unavailable, falling back to UDP")
+        if mode in ("https", "http"):
+            raise SystemExit(f"no DNS over {mode.upper()} endpoint reachable")
+        print("warning: no DNS over HTTP(S) endpoint reachable, falling back to UDP")
 
     if args.resolvers == "system":
         servers: list[str | None] = [None]
@@ -306,8 +336,6 @@ async def run(args: argparse.Namespace) -> int:
     if not candidates:
         return 0
 
-    semaphore = asyncio.Semaphore(args.concurrency)
-    batch_size = max(args.concurrency * 4, 500)
     started = time.monotonic()
     dead: set[str] = set()
     totals = {DEAD: 0, ALIVE: 0, UNKNOWN: 0, SINKHOLED: 0}
@@ -317,6 +345,8 @@ async def run(args: argparse.Namespace) -> int:
             write_domains(temporary_path, dead_so_far)
 
     async with await build_transport(args) as transport:
+        semaphore = asyncio.Semaphore(args.concurrency)
+        batch_size = max(args.concurrency * 4, 500)
         counts, unknown = await check_names(transport, candidates, semaphore, args, batch_size, dead, flush)
         for key, value in counts.items():
             totals[key] += value
@@ -377,9 +407,15 @@ def main() -> int:
     parser.add_argument("--tries", type=int, default=2, help="attempts per query (default: 2)")
     parser.add_argument(
         "--transport",
-        choices=("auto", "doh", "udp"),
+        choices=("auto", "https", "http", "udp", "doh"),
         default=os.environ.get("CHECK_TRANSPORT", "auto"),
-        help="how to resolve names (default: auto, i.e. DNS over HTTPS with UDP fallback)",
+        help="how to resolve names: auto, https (DNS over HTTPS), http (DNS over plain HTTP), "
+        "udp (default: auto, i.e. HTTPS, then plain HTTP, then UDP)",
+    )
+    parser.add_argument(
+        "--endpoints",
+        default=os.environ.get("CHECK_ENDPOINTS", ""),
+        help="comma separated DNS over HTTP(S) endpoint URLs, overrides the built-in list",
     )
     parser.add_argument(
         "--resolvers",
