@@ -5,12 +5,14 @@ Homepage: https://github.com/neodevpro/neodevhost
 
 ## How it works
 
-Every run re-checks the whole list and replaces `deadblock`, so domains that
-came back to life drop out again:
+Every run re-checks the whole accumulated list and replaces `deadblock`, so
+domains that came back to life drop out while dead names that upstream removed
+from its block list are kept:
 
 1. download <https://raw.githubusercontent.com/neodevpro/neodevhost/master/block>
-2. resolve every domain concurrently (DNS over HTTPS, UDP fallback)
-3. collect the dead domains in `deadblock.tmp` and swap it into `deadblock` when
+2. add the names already recorded in `deadblock`
+3. resolve every domain concurrently (DNS over HTTPS, UDP fallback)
+4. collect the dead domains in `deadblock.tmp` and swap it into `deadblock` when
    the run finishes
 
 The ~114k-domain list is checked in a few minutes (`CHECK_CONCURRENCY`, 2000 in
@@ -60,6 +62,7 @@ so transient DNS failures never end up in `deadblock`.
 | `--no-confirm` | | off | skip the second-resolver confirmation |
 | `--no-retry` | | off | do not retry names that could not be resolved |
 | `--limit` | | 0 | only check the first N domains (debugging) |
+| `--fresh` | | off | ignore the existing `deadblock` and rebuild it from the input only |
 | `--dry-run` | | off | print dead domains without writing `deadblock` |
 
 ## Local run

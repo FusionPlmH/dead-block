@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Bulk dead-domain checker.
 
-Reads a domain list (default: ``block``), resolves every name concurrently and
-writes the names that no longer exist to the output file (default:
-``deadblock``). Each run checks the whole list again, so names that came back
-to life disappear from the output.
+Reads a domain list (default: ``block``) plus every name already recorded in
+the output file (default: ``deadblock``), resolves all of them concurrently and
+writes the names that no longer exist to the output file. Each run re-checks the
+whole accumulated list, so domains that came back to life disappear while dead
+names that upstream dropped from its list are kept.
 
 A name is only recorded as dead when two independent resolvers agree. Names
 that cannot be resolved because of timeouts or broken authoritative servers are
@@ -289,6 +290,15 @@ async def run(args: argparse.Namespace) -> int:
         return 1
 
     candidates = load_domains(input_path)
+    checked_names = set(candidates)
+    if not args.fresh:
+        # Domains dropped from the upstream list are still re-checked, otherwise
+        # every run would throw away the dead names the list was built for.
+        kept = [name for name in load_domains(output_path) if name not in checked_names]
+        if kept:
+            print(f"re-checking {len(kept)} previously recorded domains")
+        candidates.extend(kept)
+        checked_names.update(kept)
     if args.limit:
         candidates = candidates[: args.limit]
 
@@ -385,6 +395,11 @@ def main() -> int:
         help="count names that only resolve to 0.0.0.0/loopback as dead",
     )
     parser.add_argument("--limit", type=int, default=0, help="only check the first N domains (debugging)")
+    parser.add_argument(
+        "--fresh",
+        action="store_true",
+        help="ignore the existing output and rebuild it from the input list only",
+    )
     parser.add_argument("--dry-run", action="store_true", help="print dead domains without writing the output file")
     args = parser.parse_args()
     return asyncio.run(run(args))
