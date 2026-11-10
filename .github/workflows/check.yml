@@ -1,0 +1,58 @@
+name: check
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      CHECK_CONCURRENCY: 2000
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Download block list
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 --retry-delay 5 -o block \
+            https://raw.githubusercontent.com/neodevpro/neodevhost/master/block
+          if [ ! -s block ]; then
+            echo "Downloaded block list is empty" >&2
+            exit 1
+          fi
+          echo "Downloaded $(wc -l < block) domains"
+
+      - name: Install dependencies
+        run: python3 -m pip install --quiet --upgrade dnspython aiohttp
+
+      - name: Check domains
+        run: |
+          set -euo pipefail
+          python3 check.py --input block --output deadblock
+          rm -f block
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain -- deadblock)" ]; then
+            echo "dirty=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "dirty=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit
+        if: steps.changes.outputs.dirty == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5.1.0
+        with:
+          branch: ${{ github.ref_name }}
+          commit_message: 'Update deadblock'
+          file_pattern: deadblock
+          commit_user_name: FusionPlmH
+          commit_user_email: leemenhin@gmail.com
