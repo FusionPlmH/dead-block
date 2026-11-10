@@ -61,7 +61,7 @@ so transient DNS failures never end up in `deadblock`.
 | `--tries` | | 2 | attempts per query |
 | `--transport` | `CHECK_TRANSPORT` | `auto` | `auto`, `https`, `http` (plain) or `udp` |
 | `--endpoints` | `CHECK_ENDPOINTS` | built-in | comma separated DoH URLs, `http://` or `https://` |
-| `--resolvers` | `CHECK_RESOLVERS` | `auto` | UDP only: `auto`, `system` or `a,b,c` |
+| `--resolvers` | `CHECK_RESOLVERS` | `auto` | UDP only: `auto`, `system` or `a,b,c` (`host` or `host:port`) |
 | `--sinkhole-dead` | `CHECK_SINKHOLE_DEAD` | off | treat `0.0.0.0`/loopback-only names as dead |
 | `--no-confirm` | | off | skip the second-resolver confirmation |
 | `--no-retry` | | off | do not retry names that could not be resolved |
@@ -81,3 +81,39 @@ python check.py --transport http       # DNS over plain HTTP only
 python check.py --transport udp        # fall back to plain DNS
 python check.py --endpoints https://dns.google/resolve
 ```
+
+## Using a local resolver (AdGuard Home, dnsmasq, Unbound)
+
+A local forwarder such as AdGuard Home can be used with `--transport udp`:
+
+```bash
+python check.py --transport udp --resolvers 127.0.0.1:15353
+```
+
+Three settings decide whether it helps or quietly corrupts the result:
+
+1. **Disable all filters.** The AdGuard Home wizard enables *AdGuard DNS filter*
+   and *AdAway Default Blocklist*; blocked names then answer `NXDOMAIN` or
+   `0.0.0.0` and look dead. That is indistinguishable from a real dead domain
+   for names on the blocklists (ads, trackers, telemetry hosts).
+2. **Raise the rate limit.** `ratelimit: 20` (queries per second per client) is
+   the default; all lookups come from one address, so 2000 domains took 116 s
+   with 1830 unknown instead of ~10 s.
+3. **Do not add plaintext UDP upstreams to `parallel` mode.** Where the network
+   intercepts UDP/53, the injected `0.0.0.0` answer wins the race: with
+   `223.5.5.5` added as an upstream, 1630 of 2000 domains were reported as
+   sinkholed. Use `https://cloudflare-dns.com/dns-query` and
+   `https://dns.google/dns-query` only.
+
+With those three fixed, measured on the same 3000-domain sample:
+
+| concurrency | direct DoH | local AdGuard Home |
+|-------------|-----------|--------------------|
+| 400 | 16.0 s, 188 unknown | 10.6 s, 49 unknown |
+| 800 | 20.9 s, 172 unknown | 13.8 s, 49 unknown |
+| 1600 | 26.7 s, 1284 unknown | 11.1 s, 49 unknown |
+
+The gain comes from AdGuard Home querying two upstreams in parallel and reusing
+persistent connections, so tail latency and timeouts shrink. It is not needed on
+GitHub Actions, where the runner already reaches the public resolvers quickly
+(2.2% unknown, near the floor of domains that simply cannot be resolved).

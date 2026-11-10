@@ -101,6 +101,14 @@ class DohTransport:
         return "error", []
 
 
+def split_server(spec: str) -> tuple[str, int]:
+    """Split ``host`` or ``host:port`` (IPv6 literals without a port still work)."""
+    host, separator, port = spec.rpartition(":")
+    if separator and host and port.isdigit() and ":" not in host:
+        return host, int(port)
+    return spec, 53
+
+
 class UdpTransport:
     """Round-robin over plain DNS resolvers so no single server gets hammered."""
 
@@ -110,8 +118,10 @@ class UdpTransport:
             if server is None:
                 resolver = dns.asyncresolver.Resolver()
             else:
+                host, port = split_server(server)
                 resolver = dns.asyncresolver.Resolver(configure=False)
-                resolver.nameservers = [server]
+                resolver.nameservers = [host]
+                resolver.port = port
             resolver.timeout = timeout
             resolver.lifetime = timeout
             resolver.retry_servfail = False
@@ -181,8 +191,10 @@ async def check_and_report(transport, semaphore: asyncio.Semaphore, name: str, a
 
 
 async def _udp_reachable(server: str, timeout: float) -> bool:
+    host, port = split_server(server)
     resolver = dns.asyncresolver.Resolver(configure=False)
-    resolver.nameservers = [server]
+    resolver.nameservers = [host]
+    resolver.port = port
     resolver.timeout = timeout
     resolver.lifetime = timeout
     resolver.retry_servfail = False
@@ -420,7 +432,8 @@ def main() -> int:
     parser.add_argument(
         "--resolvers",
         default=os.environ.get("CHECK_RESOLVERS", "auto"),
-        help="UDP resolvers: comma separated list, 'system' or 'auto' (default: auto)",
+        help="UDP resolvers: comma separated host or host:port list, 'system' or 'auto' "
+        "(default: auto; e.g. 127.0.0.1:15353 for a local AdGuard Home)",
     )
     parser.add_argument("--no-confirm", action="store_true", help="skip the second resolver confirmation")
     parser.add_argument("--no-retry", action="store_true", help="do not retry names that could not be resolved")
